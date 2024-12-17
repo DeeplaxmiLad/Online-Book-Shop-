@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="ISO-8859-1">
+      <title>Feedback Form</title>
+      <style>
+         .container {
+            border: 5px solid;
+            padding: 5px;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-sizing: border-box;
+         }
+         .footer {
+            text-align: center;
+            background: black;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 14px;
+            min-width: 250px;
+            margin-bottom: 20px;
+         }
+         .copyright {
+            text-align: center;
+         }
+         table {
+            margin-bottom: 20px;
+         }
+         td, a {
+            padding: 10px;
+            border: 1px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <h2 style="background-color:green;color:white;text-align:center;">Feedback Form</h2>
+         <form action="submitFeedback" method="post">
+            <table>
+               <tr>
+                  <td>Your Name</td>
+                  <td><input type="text" name="userName" required></td>
+               </tr>
+               <tr>
+                  <td>Email</td>
+                  <td><input type="email" name="userEmail" required></td>
+               </tr>
+               <tr>
+                  <td>Feedback</td>
+                  <td><textarea name="userFeedback" rows="4" cols="30" required></textarea></td>
+               </tr>
+               <tr>
+                  <td><input type="submit" value="Submit"></td>
+                  <td><input type="reset" value="Cancel"></td>
+               </tr>
+            </table>
+         </form>
+      </div>
+      <div class="footer">
+         <h3>Useful Links</h3>
+         <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+         </ul>
+         <h3>Follow us</h3>
+         <ul>
+            <li>Facebook</li>
+            <li>Youtube</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+         </ul>
+      </div>
+      <p class="copyright">Copyright 2024 - EbookStore</p>
+   </body>
+</html>
